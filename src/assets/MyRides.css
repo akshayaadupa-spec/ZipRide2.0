@@ -1,0 +1,258 @@
+.myrides-container {
+
+    width:90%;
+    max-width:1000px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+
+
+/* Main heading */
+
+.myrides-container h1 {
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* Section headings */
+
+.myrides-container h2 {
+
+    color:#2563eb;
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* Ride Card */
+
+.ride-card {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+
+}
+
+
+
+.ride-card:hover {
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+
+.ride-card h3 {
+
+    color:#1d4ed8;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.ride-card p {
+
+    color:#444;
+
+    font-size:16px;
+
+    margin:10px 0;
+
+}
+
+
+
+
+
+/* Status */
+
+.upcoming {
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+.completed {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+.cancelled {
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* Cancel Button */
+
+
+.cancel-btn {
+
+    margin-top:15px;
+
+    width:100%;
+
+    padding:13px;
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+.cancel-btn:hover {
+
+    background:#dc2626;
+
+}
+
+
+
+
+
+/* Offered rides */
+
+
+.offer-title {
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+/* Empty message */
+
+
+.empty-box {
+
+    background:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+    color:#666;
+
+}
+
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
+
+    .myrides-container{
+
+        width:85%;
+
+    }
+
+
+    .myrides-container h1{
+
+        font-size:26px;
+
+    }
+
+
+    .ride-card{
+
+        padding:20px;
+
+    }
+
+
+}

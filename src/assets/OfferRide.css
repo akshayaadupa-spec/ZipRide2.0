@@ -1,0 +1,102 @@
+.offer-container {
+  width: 450px;
+  margin: 40px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+
+.offer-container h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+
+.offer-container p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+
+/* Form */
+
+.offer-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.offer-container input,
+.offer-container select {
+
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+
+}
+
+
+.offer-container input:focus,
+.offer-container select:focus {
+
+  border-color: #2563eb;
+
+}
+
+
+/* Publish Button */
+
+.offer-container button {
+
+  margin-top: 10px;
+  padding: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: white;
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+.offer-container button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(37,99,235,0.4);
+
+}
+
+
+/* Mobile responsive */
+
+@media(max-width:600px){
+
+  .offer-container{
+
+    width:85%;
+    padding:25px;
+
+  }
+
+}

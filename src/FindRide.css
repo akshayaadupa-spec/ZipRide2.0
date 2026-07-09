@@ -1,0 +1,321 @@
+.find-container {
+
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 40px auto;
+
+  text-align: center;
+
+}
+
+
+
+.find-container h1 {
+
+  color: #1e3a8a;
+  font-size: 34px;
+
+  margin-bottom: 10px;
+
+}
+
+
+.find-container p {
+
+  color: #666;
+
+}
+
+
+
+/* Search section */
+
+.search-box {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 30px auto;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.search-box input {
+
+  width: 250px;
+
+  padding: 13px;
+
+  border-radius: 12px;
+
+  border: 1px solid #ccc;
+
+  font-size: 15px;
+
+  outline: none;
+
+}
+
+
+
+.search-box input:focus {
+
+  border-color: #2563eb;
+
+}
+
+
+
+/* Clear button */
+
+.clear-btn {
+
+  padding: 12px 25px;
+
+  border-radius: 12px;
+
+  border: none;
+
+  background: #ef4444;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+
+.clear-btn:hover {
+
+  background: #dc2626;
+
+}
+
+
+
+/* Ride list */
+
+.ride-list {
+
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px,1fr)
+  );
+
+  gap: 25px;
+
+}
+
+
+
+/* Ride card */
+
+.ride-card {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  box-shadow:
+  0 8px 25px rgba(0,0,0,0.12);
+
+  text-align: left;
+
+  transition: 0.3s;
+
+}
+
+
+
+.ride-card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+
+
+.ride-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #ddd;
+
+  padding-bottom: 15px;
+
+}
+
+
+
+.ride-header h2 {
+
+  color: #1e3a8a;
+
+  font-size: 22px;
+
+}
+
+
+
+.price {
+
+  background: #2563eb;
+
+  color:white;
+
+  padding:8px 15px;
+
+  border-radius:20px;
+
+  font-weight:bold;
+
+}
+
+
+
+/* Details */
+
+
+.ride-card p {
+
+  margin: 12px 0;
+
+  color:#444;
+
+  font-size:16px;
+
+}
+
+
+
+/* Seats */
+
+.available {
+
+  color:green !important;
+
+  font-weight:bold;
+
+}
+
+
+
+.full {
+
+  color:red !important;
+
+  font-weight:bold;
+
+}
+
+
+
+/* Book button */
+
+
+.ride-card button {
+
+  width:100%;
+
+  padding:13px;
+
+  margin-top:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+}
+
+
+
+.ride-card button:hover {
+
+  box-shadow:
+  0 5px 15px rgba(37,99,235,0.4);
+
+}
+
+
+
+.ride-card button:disabled {
+
+  background:#999;
+
+  cursor:not-allowed;
+
+}
+
+
+
+/* No rides */
+
+
+.no-rides {
+
+  margin-top:50px;
+
+  padding:30px;
+
+  background:white;
+
+  border-radius:15px;
+
+  box-shadow:
+  0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+  .find-container h1{
+
+    font-size:26px;
+
+  }
+
+
+  .search-box input{
+
+    width:90%;
+
+  }
+
+}

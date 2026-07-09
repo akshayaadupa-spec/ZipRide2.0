@@ -1,0 +1,14 @@
+body{
+    background:red !important;
+}
+
+.bookride-container{
+    background:yellow !important;
+    min-height:100vh;
+}
+
+.bookride-card{
+    background:blue !important;
+    color:white !important;
+    padding:50px;
+}
