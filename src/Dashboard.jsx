@@ -21,7 +21,19 @@ function Dashboard() {
       <p className="subtitle">
         Manage your rides and stay updated with your campus travel.
       </p>
+{/* Hero Actions */}
 
+<div className="hero-actions">
+
+  <Link to="/find" className="hero-btn primary">
+    🚗 Book a Ride
+  </Link>
+
+  <Link to="/offer" className="hero-btn secondary">
+    ➕ Offer a Ride
+  </Link>
+
+</div>
 
 
 
@@ -67,7 +79,25 @@ function Dashboard() {
 
       </div>
 
+{/* Upcoming Ride */}
 
+<h2 className="section-title">
+  Upcoming Ride
+</h2>
+
+<div className="upcoming-ride">
+
+  <h3>📍 Hyderabad → Warangal</h3>
+
+  <p><strong>Date:</strong> 20 July 2026</p>
+
+  <p><strong>Driver:</strong> Rahul</p>
+
+  <p><strong>Vehicle:</strong> Swift Dzire</p>
+
+  <p><strong>Status:</strong> Confirmed ✅</p>
+
+</div>
 
 
 
@@ -119,12 +149,7 @@ function Dashboard() {
 
 
 
-        <Link 
-          to="/profile"
-          className="action-btn"
-        >
-          👤 Profile
-        </Link>
+        
 
 
       </div>
@@ -142,33 +167,50 @@ function Dashboard() {
 
 
 
-      <div className="activity">
-
+            <div className="activity">
 
         <div className="activity-card">
           🚗 Ride booked to College
         </div>
 
-
         <div className="activity-card">
           ✅ Ride completed successfully
         </div>
-
 
         <div className="activity-card">
           ⭐ Driver rated 5 stars
         </div>
 
-
         <div className="activity-card">
           🔔 New ride notification received
         </div>
 
+      </div>
+
+      {/* Safety Tips */}
+
+      <h2 className="section-title">
+        Safety Tips
+      </h2>
+
+      <div className="tips">
+
+        <div className="tip">
+          ✅ Verify the driver's identity before boarding.
+        </div>
+
+        <div className="tip">
+          📍 Share your trip with friends or family.
+        </div>
+
+        <div className="tip">
+          ⭐ Rate your ride after every journey.
+        </div>
 
       </div>
 
-
     </div>
+
 
   );
 

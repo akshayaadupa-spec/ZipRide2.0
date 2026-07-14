@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import BackButton from "./BackButton";
-import { RideContext } from "../RideContext";
+import { RideContext } from "./RideContext";
 import "./OfferRide.css";
 
 function OfferRide() {

@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./assets/Navbar";
 import BackButton from "./assets/BackButton";
-import { RideContext } from "./RideContext";
+import { RideContext } from "./assets/RideContext";
 import "./FindRide.css";
 
 

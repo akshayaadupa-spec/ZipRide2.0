@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import Navbar from "./Navbar";
-import BackButton from "./BackButton";
-import { RideContext } from "../RideContext";
+
+import { RideContext } from "./RideContext";
 import "./MyRides.css";
 
+import BackButton from "./BackButton";
 
 function MyRides() {
 
@@ -29,16 +30,12 @@ function MyRides() {
 
 
 
-
   return (
 
     <>
 
       <Navbar />
-
-      <BackButton />
-
-
+<BackButton />
 
       <div className="myrides-container">
 
@@ -46,6 +43,56 @@ function MyRides() {
         <h1>
           📖 My Rides
         </h1>
+
+
+
+        {/* Summary */}
+
+        <div className="ride-summary">
+
+
+          <div className="summary-card">
+
+            <h3>
+              {bookedRides.length}
+            </h3>
+
+            <p>
+              Booked Rides
+            </p>
+
+          </div>
+
+
+
+          <div className="summary-card">
+
+            <h3>
+              {offeredRides.length}
+            </h3>
+
+            <p>
+              Offered Rides
+            </p>
+
+          </div>
+
+
+
+          <div className="summary-card">
+
+            <h3>
+              ₹840
+            </h3>
+
+            <p>
+              Total Savings
+            </p>
+
+          </div>
+
+
+        </div>
 
 
 
@@ -60,35 +107,24 @@ function MyRides() {
 
 
 
-
         {
-          bookedRides.length === 0 ?
-
-
-          (
+          bookedRides.length === 0 ? (
 
             <div className="empty-box">
-
               No booked rides yet 🚫
-
             </div>
 
-          )
 
+          ) : (
 
-          :
-
-
-          (
 
             bookedRides.map((ride,index)=>(
 
 
-              <div
+              <div 
                 className="ride-card"
                 key={index}
               >
-
 
 
                 <h3>
@@ -102,45 +138,51 @@ function MyRides() {
                 </p>
 
 
+                <p>
+                  📅 Date: {ride.date}
+                </p>
+
 
                 <p>
-                  📅 {ride.date}
+                  ⏰ Time: {ride.time}
+                </p>
+
+
+                <p>
+                  🚘 Vehicle: {ride.vehicle}
+                </p>
+
+
+                <p>
+                  💺 Seats: {ride.seats}
+                </p>
+
+
+                <p>
+                  💰 Price: ₹{ride.price}
+                </p>
+
+
+                <p>
+                  ⭐ Rating: 4.9
                 </p>
 
 
 
                 <p>
-                  ⏰ {ride.time}
-                </p>
-
-
-
-                <p>
-                  🚘 {ride.vehicle}
-                </p>
-
-
-
-                <p>
-                  💰 ₹{ride.price}
-                </p>
-
-
-
-
-                <p>
-
                   Status:
 
                   <span
                     className={
-                      ride.status.toLowerCase()
+                      ride.status === "Cancelled"
+                      ? "cancelled"
+                      : ride.status === "Completed"
+                      ? "completed"
+                      : "upcoming"
                     }
                   >
-
                     {" "}
                     {ride.status}
-
                   </span>
 
                 </p>
@@ -148,26 +190,17 @@ function MyRides() {
 
 
 
-
                 {
-                  ride.status === "Upcoming" &&
-
-                  (
+                  ride.status === "Upcoming" && (
 
                     <button
-
                       className="cancel-btn"
-
                       onClick={() => cancelRide(index)}
-
                     >
-
                       Cancel Ride
-
                     </button>
 
                   )
-
                 }
 
 
@@ -192,27 +225,20 @@ function MyRides() {
 
 
         <h2 className="offer-title">
-
           🚗 Offered Rides
-
         </h2>
 
 
 
 
         {
-
           offeredRides.map((ride,index)=>(
 
 
             <div
-
               className="ride-card"
-
               key={index}
-
             >
-
 
 
               <h3>
@@ -226,34 +252,54 @@ function MyRides() {
               </p>
 
 
+              <p>
+                📅 Date: {ride.date}
+              </p>
+
 
               <p>
-                📅 {ride.date}
+                ⏰ Time: {ride.time}
+              </p>
+
+
+              <p>
+                🚘 Vehicle: {ride.vehicle}
+              </p>
+
+
+              <p>
+                💰 Price: ₹{ride.price}
               </p>
 
 
 
               <p>
-                ⏰ {ride.time}
+                Status:
+
+                <span className="upcoming">
+                  {" "}
+                  {ride.status}
+                </span>
+
               </p>
 
 
 
-              <p>
-                🚘 {ride.vehicle}
-              </p>
+
+              <div className="ride-actions">
 
 
-
-              <p>
-                💰 ₹{ride.price}
-              </p>
-
+                <button className="edit-btn">
+                  Edit
+                </button>
 
 
-              <p>
-                Status: {ride.status}
-              </p>
+                <button className="delete-btn">
+                  Delete
+                </button>
+
+
+              </div>
 
 
 

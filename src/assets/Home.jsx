@@ -12,7 +12,7 @@ function Home() {
         <div className="hero-content">
 
           <span className="badge">
-            🚗 Smart Campus Mobility Platform
+            🚗 Smart Campus Ride Sharing Platform
           </span>
 
           <h1>
@@ -30,9 +30,13 @@ function Home() {
           {/* Center Buttons */}
          <div className="hero-buttons">
 
-  <Link to="/find" className="find-button">
-    Find Ride
-  </Link>
+  <Link
+  to="/find"
+  className="find-button"
+  onClick={() => console.log("Find Ride clicked")}
+>
+  Find Ride
+</Link>
 
   <Link to="/offer" className="offer-button">
     Offer Ride

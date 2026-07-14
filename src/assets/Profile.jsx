@@ -143,18 +143,53 @@ function Profile() {
 
           <div className="stats">
 
-            <div className="stat">
-              <h3>12</h3>
-              <p>Rides</p>
-            </div>
+  <div className="stat">
+    <h3>12</h3>
+    <p>Total Rides</p>
+  </div>
 
-            <div className="stat">
-              <h3>4.9 ⭐</h3>
-              <p>Rating</p>
-            </div>
+  <div className="stat">
+    <h3>₹840</h3>
+    <p>Money Saved</p>
+  </div>
 
-          </div>
+  <div className="stat">
+    <h3>4.9 ⭐</h3>
+    <p>Rating</p>
+  </div>
 
+  <div className="stat">
+    <h3>98%</h3>
+    <p>Ride Success</p>
+  </div>
+
+</div>
+{/* Account Status */}
+
+<div className="account-status">
+
+  <h3>Account Status</h3>
+
+  <p>✅ Student Verified</p>
+
+  <p>🚗 12 Successful Trips</p>
+
+  <p>📅 Member Since 2026</p>
+
+</div>
+{/* Travel Preferences */}
+
+<div className="account-status">
+
+  <h3>Travel Preferences</h3>
+
+  <p>🪑 Preferred Seat: Window</p>
+
+  <p>🎵 Music: Yes</p>
+
+  <p>🚭 Non-Smoking</p>
+
+</div>
           {isEditing ? (
             <button
               className="edit-btn"

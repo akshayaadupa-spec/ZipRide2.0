@@ -45,7 +45,12 @@ function Settings() {
 
   const handleLocation = () => {
     if (!location) {
-      navigator.geolocation.getCurrentPosition(
+if (!navigator.geolocation) {
+  alert("Geolocation is not supported");
+  return;
+}
+
+navigator.geolocation.getCurrentPosition(
         () => {
           alert("Location Access Enabled");
           setLocation(true);

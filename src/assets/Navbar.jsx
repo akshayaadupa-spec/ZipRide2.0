@@ -5,13 +5,22 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      <div className="logo">
+      {/* Logo */}
+      <Link to="/" className="logo">
         🚗 ZipRide
-      </div>
+      </Link>
 
+      {/* Navigation */}
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/dashboard">Dashboard</Link>
+
+        <Link to="/dashboard">
+          Dashboard
+        </Link>
+
+        <Link to="/profile">
+          Profile
+        </Link>
+
       </div>
 
     </nav>
