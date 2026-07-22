@@ -225,7 +225,24 @@ function FindRide() {
 
                     </p>
 
+<button
+  disabled={ride.seats <= 0}
+  onClick={() => {
 
+    bookRide(index);
+
+    navigate("/booking-success");
+
+  }}
+>
+  {
+    ride.seats > 0
+    ?
+    "Book Ride"
+    :
+    "Ride Full"
+  }
+</button>
 
 
 

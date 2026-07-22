@@ -43,12 +43,12 @@ function BookingSuccess() {
               Go to Dashboard
             </Link>
 
-            <Link
-              to="/find"
-              className="success-btn secondary"
-            >
-              Book Another Ride
-            </Link>
+           <Link
+  to="/find-rides"
+  className="success-btn secondary"
+>
+  Book Another Ride
+</Link>
 
           </div>
 
