@@ -23,17 +23,6 @@ function Dashboard() {
       </p>
 {/* Hero Actions */}
 
-<div className="hero-actions">
-
-  <Link to="/find" className="hero-btn primary">
-    🚗 Book a Ride
-  </Link>
-
-  <Link to="/offer" className="hero-btn secondary">
-    ➕ Offer a Ride
-  </Link>
-
-</div>
 
 
 

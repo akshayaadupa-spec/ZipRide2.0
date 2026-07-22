@@ -30,8 +30,8 @@ function Home() {
           {/* Center Buttons */}
          <div className="hero-buttons">
 
-  <Link
-  to="/find"
+ <Link
+  to="/find-rides"
   className="find-button"
   onClick={() => console.log("Find Ride clicked")}
 >
